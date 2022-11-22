@@ -9,7 +9,10 @@ body
     landing
     info
     quote
+    banner
   footer
+
+Note: Not optimized for smaller screens.
 
 */
 
@@ -144,3 +147,81 @@ button {
 
 
 /* Quote stylings */
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E5E7EB;
+  padding: 50px;
+  margin-top: 80px;
+}
+
+.quote .text {
+  width: 830px;
+}
+
+.quote p {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1F2937;
+}
+
+.quote .cite {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1F2937;
+  text-align: right;
+  margin-top: -30px;
+}
+
+
+/* Banner stylings */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+  background-color: #3882F6;
+  border: solid 1px #3882F6;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.banner h2 {
+  color: #F9FAF8;
+  font-weight: bolder;
+  padding: 0px;
+  margin-bottom: 0;
+}
+
+.banner p {
+  color: #E5E7EB;
+  font-size: 18px;
+  padding: 0px;
+  margin-top: 0;
+}
+
+.banner button {
+  border: solid 2px #F9FAF8;
+  color: #F9FAF8;
+}
+
+
+/* Footer stylings */
+
+.footer {
+  text-align: center;
+  background-color: #1F2937;
+  color: #E5E7EB;
+  padding: 50px;
+}
