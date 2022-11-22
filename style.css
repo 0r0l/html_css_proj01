@@ -1,12 +1,42 @@
+/*
+
+Overview of the top level classes
+
+body
+  header
+  content
+    header
+    landing
+    info
+    quote
+  footer
+
+*/
+
+
+/* Body and general stylings */
+
 body {
   height: 100vh;
   margin: 0;
-  overflow: hidden;
+  overflow: scroll;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+button {
+  padding: 8px 64px;
+  background-color: #3882F6;
+  color: #E5E7EB;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+
+/* Header stylings */
 
 .header {
   display: flex;
@@ -44,9 +74,15 @@ body {
   font-size: 18px;
 }
 
+
+/* Content stylings */
+
 .content {
   flex: 1;
 }
+
+
+/* Landing stylings */
 
 .landing {
   display: flex;
@@ -67,15 +103,6 @@ body {
   color: #F9FAF8;
 }
 
-button {
-  padding: 8px 64px;
-  background-color: #3882F6;
-  color: #E5E7EB;
-  border-radius: 8px;
-  font-weight: 900;
-  font-size: 18px;
-}
-
 .landing.left button {
   border: solid #3882F6 1px;
 }
@@ -87,3 +114,33 @@ button {
   background-color: rgb(134, 134, 134);
   margin-left: 50px;
 }
+
+
+/* Info stylings */
+
+.info h2,
+.info .info-box-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.info-box-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.info-box {
+  width: 150px;
+}
+
+.info-box .image {
+  border: solid #3882F6 3px;
+  border-radius: 12px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+
+/* Quote stylings */
